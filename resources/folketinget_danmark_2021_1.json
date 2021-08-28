@@ -1,0 +1,257 @@
+{
+    "parties": [
+        {
+            "name": "A. Socialdemokratiet"
+        },
+        {
+            "name": "B. Radikale Venstre"
+        },
+        {
+            "name": "C. Det Konservative Folkeparti"
+        },
+        {
+            "name": "D. Nye Borgerlige"
+        },
+        {
+            "name": "E. Klaus Riskær Pedersen"
+        },
+        {
+            "name": "F. SF - Socialistisk Folkeparti"
+        },
+        {
+            "name": "I. Liberal Alliance"
+        },
+        {
+            "name": "K. Kristendemokraterne"
+        },
+        {
+            "name": "O. Dansk Folkeparti"
+        },
+        {
+            "name": "P. Stram Kurs"
+        },
+        {
+            "name": "V. Venstre, Danmarks Liberale Parti"
+        },
+        {
+            "name": "Ø. Enhedslisten - De Rød-Grønne"
+        },
+        {
+            "name": "Å. Alternativet"
+        },
+        {
+            "name": "Uden for partierne"
+        }
+    ],
+    "threshold_percent": 2.0,
+    "threshold_seats": 1,
+    "allocated_seats": 40,
+    "districts": [
+        {
+            "name": "Københavns Storkreds",
+            "allocated_seats": 16,
+            "method": "dhont",
+            "votes": {
+                "A. Socialdemokratiet": 77879,
+                "B. Radikale Venstre": 74135,
+                "C. Det Konservative Folkeparti": 23829,
+                "D. Nye Borgerlige": 6417,
+                "E. Klaus Riskær Pedersen": 4382,
+                "F. SF - Socialistisk Folkeparti": 52176,
+                "I. Liberal Alliance": 11655,
+                "K. Kristendemokraterne": 3268,
+                "O. Dansk Folkeparti": 19181,
+                "P. Stram Kurs": 5717,
+                "V. Venstre, Danmarks Liberale Parti": 67819,
+                "Ø. Enhedslisten - De Rød-Grønne": 75935,
+                "Å. Alternativet": 29405,
+                "Uden for partierne": 607
+            }
+        },
+        {
+            "name": "Københavns Omegns Storkreds",
+            "allocated_seats": 11,
+            "method": "dhont",
+            "votes": {
+                "A. Socialdemokratiet": 79845,
+                "B. Radikale Venstre": 33638,
+                "C. Det Konservative Folkeparti": 28994,
+                "D. Nye Borgerlige": 7144,
+                "E. Klaus Riskær Pedersen": 2481,
+                "F. SF - Socialistisk Folkeparti": 29101,
+                "I. Liberal Alliance": 7916,
+                "K. Kristendemokraterne": 2930,
+                "O. Dansk Folkeparti": 25419,
+                "P. Stram Kurs": 5914,
+                "V. Venstre, Danmarks Liberale Parti": 53355,
+                "Ø. Enhedslisten - De Rød-Grønne": 22400,
+                "Å. Alternativet": 9535,
+                "Uden for partierne": 885
+            }
+        },
+        {
+            "name": "Nordsjællands Storkreds",
+            "allocated_seats": 10,
+            "method": "dhont",
+            "votes": {
+                "A. Socialdemokratiet": 61801,
+                "B. Radikale Venstre": 32419,
+                "C. Det Konservative Folkeparti": 32368,
+                "D. Nye Borgerlige": 9439,
+                "E. Klaus Riskær Pedersen": 2753,
+                "F. SF - Socialistisk Folkeparti": 19993,
+                "I. Liberal Alliance": 9581,
+                "K. Kristendemokraterne": 3229,
+                "O. Dansk Folkeparti": 21734,
+                "P. Stram Kurs": 4276,
+                "V. Venstre, Danmarks Liberale Parti": 67742,
+                "Ø. Enhedslisten - De Rød-Grønne": 16213,
+                "Å. Alternativet": 7846,
+                "Uden for partierne": 282
+            }
+        },
+        {
+            "name": "Bornholms Storkreds",
+            "allocated_seats": 2,
+            "method": "dhont",
+            "votes": {
+                "A. Socialdemokratiet": 8593,
+                "B. Radikale Venstre": 846,
+                "C. Det Konservative Folkeparti": 456,
+                "D. Nye Borgerlige": 428,
+                "E. Klaus Riskær Pedersen": 221,
+                "F. SF - Socialistisk Folkeparti": 1091,
+                "I. Liberal Alliance": 248,
+                "K. Kristendemokraterne": 1033,
+                "O. Dansk Folkeparti": 2626,
+                "P. Stram Kurs": 481,
+                "V. Venstre, Danmarks Liberale Parti": 6384,
+                "Ø. Enhedslisten - De Rød-Grønne": 2052,
+                "Å. Alternativet": 824
+            }
+        },
+        {
+            "name": "Sjællands Storkreds",
+            "allocated_seats": 20,
+            "method": "dhont",
+            "votes": {
+                "A. Socialdemokratiet": 147057,
+                "B. Radikale Venstre": 30354,
+                "C. Det Konservative Folkeparti": 30449,
+                "D. Nye Borgerlige": 13319,
+                "E. Klaus Riskær Pedersen": 5329,
+                "F. SF - Socialistisk Folkeparti": 45992,
+                "I. Liberal Alliance": 9289,
+                "K. Kristendemokraterne": 4171,
+                "O. Dansk Folkeparti": 56697,
+                "P. Stram Kurs": 14054,
+                "V. Venstre, Danmarks Liberale Parti": 126419,
+                "Ø. Enhedslisten - De Rød-Grønne": 27272,
+                "Å. Alternativet": 10305,
+                "Uden for partierne": 162
+            }
+        },
+        {
+            "name": "Fyns Storkreds",
+            "allocated_seats": 12,
+            "method": "dhont",
+            "votes": {
+                "A. Socialdemokratiet": 94337,
+                "B. Radikale Venstre": 22793,
+                "C. Det Konservative Folkeparti": 19256,
+                "D. Nye Borgerlige": 5926,
+                "E. Klaus Riskær Pedersen": 2551,
+                "F. SF - Socialistisk Folkeparti": 20961,
+                "I. Liberal Alliance": 5867,
+                "K. Kristendemokraterne": 3453,
+                "O. Dansk Folkeparti": 27746,
+                "P. Stram Kurs": 5919,
+                "V. Venstre, Danmarks Liberale Parti": 73046,
+                "Ø. Enhedslisten - De Rød-Grønne": 21182,
+                "Å. Alternativet": 9505
+            }
+        },
+        {
+            "name": "Sydjyllands Storkreds",
+            "allocated_seats": 18,
+            "method": "dhont",
+            "votes": {
+                "A. Socialdemokratiet": 113641,
+                "B. Radikale Venstre": 25551,
+                "C. Det Konservative Folkeparti": 22049,
+                "D. Nye Borgerlige": 17825,
+                "E. Klaus Riskær Pedersen": 3215,
+                "F. SF - Socialistisk Folkeparti": 22469,
+                "I. Liberal Alliance": 9310,
+                "K. Kristendemokraterne": 9496,
+                "O. Dansk Folkeparti": 54258,
+                "P. Stram Kurs": 7869,
+                "V. Venstre, Danmarks Liberale Parti": 124007,
+                "Ø. Enhedslisten - De Rød-Grønne": 17773,
+                "Å. Alternativet": 7172,
+                "Uden for partierne": 289
+            }
+        },
+        {
+            "name": "Østjyllands Storkreds",
+            "allocated_seats": 18,
+            "method": "dhont",
+            "votes": {
+                "A. Socialdemokratiet": 128108,
+                "B. Radikale Venstre": 49157,
+                "C. Det Konservative Folkeparti": 28431,
+                "D. Nye Borgerlige": 9797,
+                "E. Klaus Riskær Pedersen": 3674,
+                "F. SF - Socialistisk Folkeparti": 40665,
+                "I. Liberal Alliance": 14157,
+                "K. Kristendemokraterne": 10617,
+                "O. Dansk Folkeparti": 38889,
+                "P. Stram Kurs": 7484,
+                "V. Venstre, Danmarks Liberale Parti": 112358,
+                "Ø. Enhedslisten - De Rød-Grønne": 35261,
+                "Å. Alternativet": 16915,
+                "Uden for partierne": 549
+            }
+        },
+        {
+            "name": "Vestjyllands Storkreds",
+            "allocated_seats": 13,
+            "method": "dhont",
+            "votes": {
+                "A. Socialdemokratiet": 79550,
+                "B. Radikale Venstre": 17216,
+                "C. Det Konservative Folkeparti": 29934,
+                "D. Nye Borgerlige": 5464,
+                "E. Klaus Riskær Pedersen": 1930,
+                "F. SF - Socialistisk Folkeparti": 20151,
+                "I. Liberal Alliance": 7206,
+                "K. Kristendemokraterne": 17016,
+                "O. Dansk Folkeparti": 27229,
+                "P. Stram Kurs": 5057,
+                "V. Venstre, Danmarks Liberale Parti": 96659,
+                "Ø. Enhedslisten - De Rød-Grønne": 11091,
+                "Å. Alternativet": 5503
+            }
+        },
+        {
+            "name": "Nordjyllands Storkreds",
+            "allocated_seats": 15,
+            "method": "dhont",
+            "votes": {
+                "A. Socialdemokratiet": 124071,
+                "B. Radikale Venstre": 18605,
+                "C. Det Konservative Folkeparti": 18099,
+                "D. Nye Borgerlige": 7442,
+                "E. Klaus Riskær Pedersen": 3064,
+                "F. SF - Socialistisk Folkeparti": 19705,
+                "I. Liberal Alliance": 7041,
+                "K. Kristendemokraterne": 5731,
+                "O. Dansk Folkeparti": 34734,
+                "P. Stram Kurs": 6343,
+                "V. Venstre, Danmarks Liberale Parti": 98372,
+                "Ø. Enhedslisten - De Rød-Grønne": 15921,
+                "Å. Alternativet": 7268
+            }
+        }
+    ]
+}

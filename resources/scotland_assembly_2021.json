@@ -1,0 +1,20 @@
+{
+    "votes": {
+        "Scottish Nationalist Party": 1094374,
+        "Conservatives": 637131,
+        "Liberal Democrats": 137152,
+        "Labour": 488819,
+        "Green": 220324,
+        "Alba": 44913,
+        "All for unity": 23299,
+        "Scottish Family Party": 16085
+    },
+    "threshold": 2.0,
+    "colors": {
+        "Scottish Nationalist Party": [252, 232, 131],
+        "Conservatives": [162, 162, 208],
+        "Liberal Democrats": [248, 213, 104],
+        "Labour": [255, 73, 108],
+        "Green": [236, 234, 190]
+    }
+}
