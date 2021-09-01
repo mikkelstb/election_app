@@ -1,0 +1,142 @@
+{
+    "Name": "Norge",
+    "AdditionalSeats": 19,
+    "Threshold": 4.0,
+    "QuotientFunc": "saint_lague",
+    "FirstDivisor": 1.4,
+    "SubDistricts": [
+        {
+            "Name": "Østfold",
+            "Population": "299447",
+            "Seats": 8,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Akershus",
+            "Population": "675240",
+            "Seats": 18,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Buskerud",
+            "Population": "266478",
+            "Seats": 7,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Oslo",
+            "Population": "693494",
+            "Seats": 19,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Vestfold",
+            "Population": "246041",
+            "Seats": 6,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Telemark",
+            "Population": "173355",
+            "Seats": 5,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Aust Agder",
+            "Population": "118273",
+            "Seats": 3,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Vest Agder",
+            "Population": "188958",
+            "Seats": 5,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Rogaland",
+            "Population": "479892",
+            "Seats": 13,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Hordaland",
+            "Population": "528127",
+            "Seats": 15,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Sogn Og Fjordane",
+            "Population": "108404",
+            "Seats": 3,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Møre Og Romsdal",
+            "Population": "265238",
+            "Seats": 7,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Oppland",
+            "Population": "173465",
+            "Seats": 5,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Hedmark",
+            "Population": "179920",
+            "Seats": 6,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Sør Trøndelag",
+            "Population": "334514",
+            "Seats": 9,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Nord Trøndelag",
+            "Population": "134188",
+            "Seats": 4,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Nordland",
+            "Population": "241235",
+            "Seats": 8,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Troms",
+            "Population": "167839",
+            "Seats": 5,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Finmark",
+            "Population": "75472",
+            "Seats": 4,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        }
+    ]
+}

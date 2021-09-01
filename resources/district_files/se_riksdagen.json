@@ -1,0 +1,183 @@
+{
+    "Name": "Sverige",
+    "TotalSeats": 349,
+    "AdditionalSeats": 39,
+    "Threshold": 4.0,
+    "QuotientFunc": "saint_lague_1_2",
+    "SubDistricts": [
+        {
+            "Name": "Blekinge",
+            "Seats": 5,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Dalarna",
+            "Seats": 9,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Gotland",
+            "Seats": 2,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Gävleborg",
+            "Seats": 9,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Göteborgs Kommun",
+            "Seats": 17,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Halland",
+            "Seats": 10,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Jämtland",
+            "Seats": 4,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Jönköping",
+            "Seats": 11,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Kalmar",
+            "Seats": 8,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Kronoberg",
+            "Seats": 6,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Malmö Kommun",
+            "Seats": 10,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Norrbotten",
+            "Seats": 8,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Skåne Läns Norra och Östra",
+            "Seats": 10,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Skåne Läns Södra",
+            "Seats": 12,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Skåne Läns Västra",
+            "Seats": 9,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Stockholms Kommun",
+            "Seats": 29,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Stockholms Läns Valkrets",
+            "Seats": 38,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Södermanland",
+            "Seats": 9,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Uppsala",
+            "Seats": 11,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Värmland",
+            "Seats": 9,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Västerbotten",
+            "Seats": 9,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Västernorrland",
+            "Seats": 8,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Västmanland",
+            "Seats": 8,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Västra Götalands läns Norra",
+            "Seats": 9,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Västra Götalands läns Södra",
+            "Seats": 6,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Västra Götalands läns Västra",
+            "Seats": 12,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Västra Götalands läns Östra",
+            "Seats": 9,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Örebro",
+            "Seats": 9,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Östergötland",
+            "Seats": 14,
+            "Threshold": 12,
+            "QuotientFunc": "dhont"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "Name": "Oslo Kommune",
+    "Seats": 59,
+    "Threshold": 0, 
+    "QuotientFunc": "sainte_lague",
+    "FirstDivisor": 1.4
+}

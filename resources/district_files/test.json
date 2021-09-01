@@ -1,0 +1,21 @@
+{
+    "Name": "Norden",
+    "AdditionalSeats": 40,
+    "Threshold": 4.0,
+    "QuotientFunc": "saint_lague",
+    "First_Divisor": 1.2,
+    "SubDistricts": [
+        {
+            "Name": "Danmark",
+            "Seats": 28,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        },
+        {
+            "Name": "Sverige",
+            "Seats": 40,
+            "Threshold": 0,
+            "QuotientFunc": "dhont"
+        }
+    ]
+}

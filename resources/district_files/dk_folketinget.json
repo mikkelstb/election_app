@@ -1,0 +1,84 @@
+{
+    "Name": "Danmark",
+    "AdditionalSeats": 40,
+    "Threshold": 2.0,
+    "QuotientFunc": "saint_lague",
+    "First_Divisor": 1.2,
+    "SubDistricts": [
+        {
+            "Name": "Hovedstaden",
+            "SubDistricts": [
+                {
+                    "Name": "København",
+                    "Seats": 16,
+                    "Threshold": 0,
+                    "QuotientFunc": "dhont"
+                },
+                {
+                    "Name": "Københavns Omegn",
+                    "Seats": 11,
+                    "Threshold": 0,
+                    "QuotientFunc": "dhont"
+                },
+                {
+                    "Name": "Nordsjælland",
+                    "Seats": 10,
+                    "Threshold": 0,
+                    "QuotientFunc": "dhont"
+                },
+                {
+                    "Name": "Bornholm",
+                    "Seats": 2,
+                    "Threshold": 0,
+                    "QuotientFunc": "dhont"
+                }
+            ]
+        },
+        {
+            "Name": "Sjælland-SydDanmark",
+            "SubDistricts": [
+                {
+                    "Name": "Vestsjælland",
+                    "Seats": 20,
+                    "Threshold": 0,
+                    "QuotientFunc": "dhont"
+                },
+                {
+                    "Name": "Fyn",
+                    "Seats": 12,
+                    "Threshold": 0,
+                    "QuotientFunc": "dhont"
+                },
+                {
+                    "Name": "Sydjylland",
+                    "Seats": 18,
+                    "Threshold": 0,
+                    "QuotientFunc": "dhont"
+                }
+            ]
+        },
+        {
+            "Name": "Midtjylland-Nordjylland",
+            "SubDistricts": [
+                {
+                    "Name": "Østjylland",
+                    "Seats": 18,
+                    "Threshold": 0,
+                    "QuotientFunc": "dhont"
+                },
+                {
+                    "Name": "Vestjylland",
+                    "Seats": 13,
+                    "Threshold": 0,
+                    "QuotientFunc": "dhont"
+                },
+                {
+                    "Name": "Nordjylland",
+                    "Seats": 15,
+                    "Threshold": 0,
+                    "QuotientFunc": "dhont"
+                }
+            ]
+        }
+    ]
+}
