@@ -2,111 +2,120 @@ package main
 
 import (
 	"encoding/json"
-	"flag"
-	"fmt"
-	"html/template"
-	"mikkelstb/election_app/methods"
 	"os"
-	"sort"
 )
 
+func main() {
 
-var finished bool
-var js_results json_data
+	//fmt.Println("V2 starting")
 
-type json_data struct {
-	Votes map[string]int
+	district_file, err := os.ReadFile(os.Args[1])
+	if err != nil {
+		panic(err)
+	}
+
+	//d := new(District)
+	var js interface{}
+	err = json.Unmarshal(district_file, &js)
+	if err != nil {
+		panic(err)
+	}
+
+	country := buildDistrict(js)
+	country.initParties([]string{"Soc.Dem.", "Liberale"})
+	country.List()
+
+	d := country.findDistrict("Danmark")
+	//fmt.Println(d)
+	d.SetVotes("Soc.Dem.", 50)
+	d.SetVotes("Liberale", 100)
+
+	d.addAllSeats()
+	d.printVotes()
+
+	//d.listAsSubdir(1)
+
+	s := country.findDistrict("Sverige")
+	s.SetVotes("Soc.Dem.", 25)
+	s.SetVotes("Liberale", 50)
+
+	s.SetVotes("Liberale", 0)
+	d.SetVotes("Liberale", 0)
+
+	d.addAllSeats()
+	s.addAllSeats()
+
+	s.printVotes()
+	d.printVotes()
+	country.printVotes()
+
+	// parties := []string{"AP", "SP", "H", "KRF", "R", "SV", "FRP", "V", "MDG", "FNB"}
+	// country.initParties(parties)
+
+	// country.SetVotes("AP", 73122)
+	// country.SetVotes("H", 92833)
+	// country.SetVotes("MDG", 55772)
+	// country.SetVotes("SV", 33258)
+	// country.SetVotes("R", 26302)
+	// country.SetVotes("FNB", 21346)
+	// country.SetVotes("V", 21110)
+	// country.SetVotes("FRP", 19272)
+	// country.SetVotes("SP", 7980)
+	// country.SetVotes("KRF", 6346)
+
+	// country.addAllSeats()
+
+	// country.printVotes()
 }
 
+func buildDistrict(js interface{}) District {
+	data := js.(map[string]interface{})
 
-func main () {
+	name, exists := data["Name"].(string)
+	if !exists {
+		panic("Error Name is missing from District")
+	}
+	seats := checkInt(data["Seats"], 0)
+	additional_seats := checkInt(data["AdditionalSeats"], 0)
+	threshold := checkFloat32(data["Threshold"], 0.0)
+	first_divisor := checkFloat32(data["FirstDivisor"], 1)
 
-	number_of_mandates := flag.Int("m", 0, "number of mandates")
-	threshold := flag.Float64("t", 0, "Threshold for election")
-	filename := flag.String("f", "", "filename with results")
-
-	flag.Parse()
-
-	if *filename != "" {
-		file, err := os.ReadFile(*filename)
-		if err != nil {
-			fmt.Sprintln(err.Error())
+	var qf QuotientFunc
+	qf_string, exists := data["QuotientFunc"]
+	if exists {
+		switch qf_string.(string) {
+		case "dhont":
+			qf = dhont{}
+		case "sainte_lague":
+			qf = sainteLague{}
 		}
-		json.Unmarshal(file, &js_results)
+	} else {
+		qf = none{}
 	}
-	
-	election_engine := new(methods.Result)
-	election_engine.LoadVotes(js_results.Votes)
-	election_engine.SetThreshold(*threshold)
-	mandates := election_engine.GetAllMandates(*number_of_mandates)
-	total_votes := election_engine.Total_votes
-	printVotes(mandates, total_votes)
-	printPage(election_engine)
-}
 
+	d := NewDistrict(name, seats, additional_seats, qf, threshold, first_divisor, nil)
 
-func printVotes(parties []methods.Party, total_votes int) {
-
-
-	sort.Slice(parties, func(i, j int) bool { return int(parties[i].Votes) > int(parties[j].Votes)} )
-
-	fmt.Println("")
-
-	for _, party := range parties {
-
-		fmt.Printf("%-25s \t %7d   %5.2f %%   %3d \n", party.Name, party.Votes, party.Percentage, party.Seats)
-	}
-	fmt.Printf("total votes: %d\n", total_votes)
-	fmt.Println("")
-}
-
-
-func printPage(results *methods.Result) {
-	t, err := template.ParseFiles("./templates/results.html")
-	if err != nil {
-		fmt.Println(err.Error())
-	}
-	file, err := os.Create("./election.html")
-	if err != nil {
-		fmt.Println(err.Error())
-	}
-	defer file.Close()
-
-	err = t.Execute(file, results)
-	if err != nil {
-		fmt.Println(err.Error())
-	}
-}
-
-
-
-	//reader := bufio.NewReader(os.Stdin)
-	//number_of_parties := flag.Int("p", 0, "Number of parties")
-
-/* 	else {
-		for x := 0; x < *number_of_parties; x++ {
-			fmt.Print("Enter party: ")
-			party, err := reader.ReadString('\n')
-			if err != nil {
-				break
-			}
-			party = strings.TrimSuffix(party, "\n")
-			fmt.Print("Enter votes: ")
-			party_votes, err := reader.ReadString('\n')
-			if err != nil {
-				break
-			}
-			party_votes = strings.TrimSuffix(party_votes, "\n")
-			party_votes_i, err := strconv.Atoi(party_votes)
-			if err != nil {
-				fmt.Println(err.Error())
-				break
-			}
-			if party_votes_i < 0 {
-				fmt.Println("Not a natural number")
-				break
-			}
-			results.Votes[party] = party_votes_i
+	sub_districts, ok := data["SubDistricts"]
+	if ok {
+		for _, sd := range sub_districts.([]interface{}) {
+			d.addSubdistrict(buildDistrict(sd))
 		}
 	}
- */
+	return d
+}
+
+func checkInt(i interface{}, deafult int) int {
+	if i == nil {
+		return deafult
+	} else {
+		return int(i.(float64))
+	}
+}
+
+func checkFloat32(i interface{}, deafult float32) float32 {
+	if i == nil {
+		return deafult
+	} else {
+		return float32(i.(float64))
+	}
+}
