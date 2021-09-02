@@ -22,53 +22,41 @@ func main() {
 	}
 
 	country := buildDistrict(js)
-	country.initParties([]string{"Soc.Dem.", "Liberale"})
-	country.List()
 
-	d := country.findDistrict("Danmark")
-	//fmt.Println(d)
-	d.SetVotes("Soc.Dem.", 50)
-	d.SetVotes("Liberale", 100)
+	country.initParties([]string{
+		"Andre*",
+		"Arbeiderpartiet",
+		"Fremskrittspartiet",
+		"Høyre",
+		"Kristelig Folkeparti",
+		"Miljøpartiet De Grønne",
+		"Rødt",
+		"Senterpartiet",
+		"Sosialistisk Venstreparti",
+		"Venstre",
+	})
 
-	d.addAllSeats()
-	d.printVotes()
+	votes := readVoteFile("resources/vote_files/stortinget_norstat.csv")
 
-	//d.listAsSubdir(1)
+	for _, dis_vote := range votes.districts {
+		district := country.findDistrict(dis_vote.name)
+		//fmt.Println("Found: " + district.Name)
+		for party, vote := range dis_vote.parties {
+			district.SetVotes(party, vote)
+		}
+	}
 
-	s := country.findDistrict("Sverige")
-	s.SetVotes("Soc.Dem.", 25)
-	s.SetVotes("Liberale", 50)
+	for index := range country.SubDistricts {
+		country.SubDistricts[index].addAllSeats()
+		country.SubDistricts[index].printVotes()
+	}
 
-	s.SetVotes("Liberale", 0)
-	d.SetVotes("Liberale", 0)
+	country.addAllAdditionalSeats()
 
-	d.addAllSeats()
-	s.addAllSeats()
-
-	s.printVotes()
-	d.printVotes()
 	country.printVotes()
-
-	// parties := []string{"AP", "SP", "H", "KRF", "R", "SV", "FRP", "V", "MDG", "FNB"}
-	// country.initParties(parties)
-
-	// country.SetVotes("AP", 73122)
-	// country.SetVotes("H", 92833)
-	// country.SetVotes("MDG", 55772)
-	// country.SetVotes("SV", 33258)
-	// country.SetVotes("R", 26302)
-	// country.SetVotes("FNB", 21346)
-	// country.SetVotes("V", 21110)
-	// country.SetVotes("FRP", 19272)
-	// country.SetVotes("SP", 7980)
-	// country.SetVotes("KRF", 6346)
-
-	// country.addAllSeats()
-
-	// country.printVotes()
 }
 
-func buildDistrict(js interface{}) District {
+func buildDistrict(js interface{}) *District {
 	data := js.(map[string]interface{})
 
 	name, exists := data["Name"].(string)

@@ -5,3 +5,7 @@ type Party struct {
 	Abbrevation string
 	Id          int
 }
+
+func (p *Party) String() string {
+	return p.Name
+}

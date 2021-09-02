@@ -2,7 +2,7 @@
     "Name": "Norge",
     "AdditionalSeats": 19,
     "Threshold": 4.0,
-    "QuotientFunc": "saint_lague",
+    "QuotientFunc": "sainte_lague",
     "FirstDivisor": 1.4,
     "SubDistricts": [
         {
@@ -10,133 +10,152 @@
             "Population": "299447",
             "Seats": 8,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Akershus",
             "Population": "675240",
             "Seats": 18,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Buskerud",
             "Population": "266478",
             "Seats": 7,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Oslo",
             "Population": "693494",
             "Seats": 19,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Vestfold",
             "Population": "246041",
             "Seats": 6,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Telemark",
             "Population": "173355",
             "Seats": 5,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Aust Agder",
             "Population": "118273",
             "Seats": 3,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Vest Agder",
             "Population": "188958",
             "Seats": 5,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Rogaland",
             "Population": "479892",
             "Seats": 13,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Hordaland",
             "Population": "528127",
             "Seats": 15,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
-            "Name": "Sogn Og Fjordane",
+            "Name": "Sogn og Fjordane",
             "Population": "108404",
             "Seats": 3,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
-            "Name": "Møre Og Romsdal",
+            "Name": "Møre og Romsdal",
             "Population": "265238",
             "Seats": 7,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Oppland",
             "Population": "173465",
             "Seats": 5,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Hedmark",
             "Population": "179920",
             "Seats": 6,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Sør Trøndelag",
             "Population": "334514",
             "Seats": 9,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Nord Trøndelag",
             "Population": "134188",
             "Seats": 4,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Nordland",
             "Population": "241235",
             "Seats": 8,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
             "Name": "Troms",
             "Population": "167839",
             "Seats": 5,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         },
         {
-            "Name": "Finmark",
+            "Name": "Finnmark",
             "Population": "75472",
             "Seats": 4,
             "Threshold": 0,
-            "QuotientFunc": "dhont"
+            "QuotientFunc": "sainte_lague",
+            "FirstDivisor":1.4
         }
     ]
 }
